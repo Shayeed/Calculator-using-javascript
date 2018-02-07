@@ -1,0 +1,107 @@
+/*Add calculator font to css---------------------------*/
+@font-face {
+    font-family: 'digital-7';
+    src: url(../fonts/digital-7.ttf)
+}
+/*-----------------------------------------------------*/
+
+
+/*Body css*/
+body {
+	margin: auto;
+	width:400px;
+}
+
+/*Outside body of the calculator*/
+#calOuterBorder {
+	background-color: #808080;
+	float:left;
+	width:410px;
+	height: 630px;
+	margin-top: 30px;
+	border-radius: 15px;	/*Rounded corners for border*/
+}
+
+#calculator {
+	background-color: #A9A9A9;
+	float:left;
+	width:400px;
+	height: 620px;
+	border-radius: 15px;
+	margin: 5px;
+}
+
+/*Heading divs*/
+#solarPower {
+	float:left;
+	background-color: #500600;
+	width:200px;
+	height:25px;
+	margin-top:20px;
+	margin-left: 20px;
+	border-radius: 5px;
+}
+
+#heading {
+	float:left;
+	width:160px;
+	margin-left: 20px;
+	margin-top:20px;
+	font-family: sans-serif;
+	font-size: 25px;
+	font-weight: bold;
+}
+
+/*Display divs*/
+#display {
+	background-color: #DCDCDC;
+	float:left;
+	width:360px;
+	height: 70px;
+	border: 1px solid black;
+	border-radius: 5px;
+	margin: 20px;
+}
+
+#result {
+	float:right;
+	font-family:digital-7;	/*Calculator font*/
+	font-size: 60px;
+	margin-top: 5px;
+	margin-bottom: 0px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+/*Button Area*/
+#btnArea {
+	float:left;
+	width:360px;
+	height: 450px;
+	margin: 0px 20px 20px 20px;
+}
+
+.btn {
+	background-color: #696969;
+	float:left;
+	width:70px;
+	height: 70px;
+	margin: 10px;
+	font-family: sans-serif;
+	font-size: 35px;
+	color: white;
+	border-radius: 5px;
+	border-color: black;
+}
+
+#backSpace {
+	margin-left : 190px;
+}
+
+.operand {
+	background-color: #303030;
+}
+
+.highlight {
+	background-color: #FF8C00;
+}

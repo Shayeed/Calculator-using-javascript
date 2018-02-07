@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Calculator</title>
+		<link rel="stylesheet" type="text/css" href="styles/style.css"/>
+	</head>
+	<body>
+		<div id="calOuterBorder">
+			<div id="calculator">
+				<div id="solarPower"></div>
+				<div id="heading">Calculator</div>
+				<div id="display">
+					<p id="result">0</p>
+				</div>
+				<div id="btnArea">
+					<!--Each indivicual button has a function associated with it-->
+					<button type="button" id="backSpace" class="btn" onclick="del();">&larr;</button>
+					<button type="button" id="clear" class="btn" onclick="delAll();">C</button>
+					<button type="button" id="seven" class="btn" onclick="setNumber('7');">7</button>
+					<button type="button" id="eight" class="btn" onclick="setNumber('8');">8</button>
+					<button type="button" id="nine" class="btn" onclick="setNumber('9');">9</button>
+					<button type="button" id="divide" class="btn operand" onclick="setOperator('/');">/</button>
+					<button type="button" id="four" class="btn" onclick="setNumber('4');">4</button>
+					<button type="button" id="five" class="btn" onclick="setNumber('5');">5</button>
+					<button type="button" id="six" class="btn" onclick="setNumber('6');">6</button>
+					<button type="button" id="multiple" class="btn operand" onclick="setOperator('*');">*</button>
+					<button type="button" id="one" class="btn" onclick="setNumber('1');">1</button>
+					<button type="button" id="two" class="btn" onclick="setNumber('2');">2</button>
+					<button type="button" id="three" class="btn" onclick="setNumber('3');">3</button>
+					<button type="button" id="minus" class="btn operand" onclick="setOperator('-');">-</button>
+					<button type="button" id="zero" class="btn" onclick="setNumber('0');">0</button>
+					<button type="button" id="decimal" class="btn" onclick="setNumber('.');">.</button>
+					<button type="button" id="equal" class="btn highlight" onclick="calculate();">=</button>
+					<button type="button" id="plus" class="btn operand" onclick="setOperator('+');">+</button>
+				</div>
+			</div>	
+		</div>
+
+		<!-- Script is loaded at last position so that event listeners work correctly-->
+		<script type="text/javascript" src="scripts/script.js"></script>
+	</body>
+</html>
